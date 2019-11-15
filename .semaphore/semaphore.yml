@@ -28,4 +28,5 @@ blocks:
             - virtualenv test_cache
             - source test_cache/bin/activate
             - cache restore
+            - pip freeze
             - pylint __main__.py
