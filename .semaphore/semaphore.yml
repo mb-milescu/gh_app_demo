@@ -19,7 +19,7 @@ blocks:
       jobs:
         - name: 'Job #1'
           commands:
-            - chekout
+            - checkout
             - sem-version python 3.7
             - cache restore
             - pylint __main__.py
