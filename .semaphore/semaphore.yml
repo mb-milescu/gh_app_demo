@@ -13,8 +13,8 @@ blocks:
             - checkout
             # - sem-version python 3.7
             # - pip install virtualenv
-            # - virtualenv test_cache
-            # - source test_cache/bin/activate
+            - virtualenv test_cache
+            - source test_cache/bin/activate
             - pip install --cache-dir .pip_cache -r requirements.txt
             - cache store
             - pip freeze
@@ -26,8 +26,8 @@ blocks:
             - checkout
             # - sem-version python 3.7
             # - pip install virtualenv
-            # - virtualenv test_cache
-            # - source test_cache/bin/activate
+            - virtualenv test_cache
+            - source test_cache/bin/activate
             - cache restore
             - pip freeze
             - pylint __main__.py
