@@ -11,11 +11,11 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            # - sem-version python 3.7
-            # - pip install virtualenv
+            - sem-version python 3.7
+            - pip3 install virtualenv
             - virtualenv test_cache
             - source test_cache/bin/activate
-            - pip install --cache-dir .pip_cache -r requirements.txt
+            - pip3 install --cache-dir .pip_cache -r requirements.txt
             - cache store
             - pip freeze
   - name: 'Block #2'
@@ -24,8 +24,8 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
-            # - sem-version python 3.7
-            # - pip install virtualenv
+            - sem-version python 3.7
+            - pip3 install virtualenv
             - virtualenv test_cache
             - source test_cache/bin/activate
             - cache restore
